@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ROUTES } from '../routes';
 const Book = ({props}) => {
     const {bookId,bookName,author,category,rating, image,review,totalPages}=props ;
+    
     return ( 
 
         <div   className="card bg-base-100 h-[500px] w-[310px] shadow-xl">
@@ -20,7 +21,7 @@ const Book = ({props}) => {
                 <h2 className="card-title">Rating:{rating}</h2>
                 
                 <div className="card-actions ">
-              <Link to={`/book/${bookId}`}><button className="btn btn-primary  "  >Book Details</button></Link>  
+              <Link to={{ pathname: `/book/${bookId}`  }} state={{book: props}}      ><button className="btn btn-primary  "  >Book Details</button></Link>  
                 </div>
             </div>
     </div>

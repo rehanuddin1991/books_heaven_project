@@ -19,10 +19,12 @@ const NavBar = () => {
               </div>
               <ul tabIndex="0"
                 className="menu menu-sm dropdown-content bg-green-600 rounded-md z-[1] mt-3 w-[550%]   p-2 shadow">
-                <li><a id="potato_btn_ham" className="hover:text-black font-semibold">Potato</a></li>
-                <li><a id="soup_btn_ham" className="hover:text-black font-semibold">Soup</a></li>
-                <li><a id="chicken_btn_ham" className="hover:text-black font-semibold">Chicken</a></li>
-                <li><a id="beef_btn_ham" className="hover:text-black font-semibold">Beef</a></li>
+                <li><a   className="hover:text-black font-semibold">Home</a></li>
+                <li><a   className="hover:text-black font-semibold">About</a></li>
+                <li><a   className="hover:text-black font-semibold">Blog</a></li>
+                <li><a   className="hover:text-black font-semibold">FAQ</a></li>
+                <li><a   className="hover:text-black font-semibold">Buy Now</a></li>
+                <li><a   className="hover:text-black font-semibold">Sign In</a></li>
 
               </ul>
             </div>
