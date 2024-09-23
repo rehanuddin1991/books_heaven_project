@@ -16,7 +16,7 @@ const router = createBrowserRouter([
       },
        
       {
-        path: `${ROUTES.SINGLE_BOOKS.STATIC}`,
+        path: "/book/:bookId",
         element: <BookDetailsPage />,
       },
     ],
