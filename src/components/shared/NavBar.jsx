@@ -19,10 +19,10 @@ const NavBar = () => {
               </div>
               <ul tabIndex="0"
                 className="menu menu-sm dropdown-content bg-green-600 rounded-md z-[1] mt-3 w-[550%]   p-2 shadow">
-                <li><Link    className="hover:text-black font-semibold">Home</Link></li>
-                <li><Link    className="hover:text-black font-semibold">About</Link></li>
-                <li><Link    className="hover:text-black font-semibold">Blog</Link></li>
-                <li><Link    className="hover:text-black font-semibold">FAQ</Link></li>
+                <li><Link to={ `${ROUTES.HOME}` }   className="hover:text-black font-semibold">Home</Link></li>
+                <li><Link   to={`${ROUTES.ABOUT}`}   className="hover:text-black font-semibold">About</Link></li>
+                <li><Link   to={`${ROUTES.BLOG}`}   className="hover:text-black font-semibold">Blog</Link></li>
+                <li><Link  to={`${ROUTES.FAQ}`}  className="hover:text-black font-semibold">FAQ</Link></li>
                 <li><Link    className="hover:text-black font-semibold">Buy Now</Link></li>
                 <li><Link    className="hover:text-black font-semibold">Sign In</Link></li>
 
