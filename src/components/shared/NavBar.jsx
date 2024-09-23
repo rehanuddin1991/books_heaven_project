@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import { ROUTES } from "../../routes";
 const NavBar = () => {
   return (
     <div className='w-[100%] mx-auto text-white bg-[#3E4876] '>
@@ -34,7 +34,7 @@ const NavBar = () => {
           <div className="navbar-end hidden lg:flex  sm:flex md:flex ">
             <ul className="menu menu-horizontal ">
 
-              <Link  
+              <Link to={ `${ROUTES.HOME}` }
                   className="bg-[indigo]  hover:bg-[lightseagreen] rounded-lg p-2   ">Home</Link> &nbsp;
               <Link   
                   className="bg-[midnightblue] hover:bg-[indigo] rounded-lg p-2  ">About</Link>&nbsp;
