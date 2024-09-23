@@ -19,12 +19,12 @@ const NavBar = () => {
               </div>
               <ul tabIndex="0"
                 className="menu menu-sm dropdown-content bg-green-600 rounded-md z-[1] mt-3 w-[550%]   p-2 shadow">
-                <li><a   className="hover:text-black font-semibold">Home</a></li>
-                <li><a   className="hover:text-black font-semibold">About</a></li>
-                <li><a   className="hover:text-black font-semibold">Blog</a></li>
-                <li><a   className="hover:text-black font-semibold">FAQ</a></li>
-                <li><a   className="hover:text-black font-semibold">Buy Now</a></li>
-                <li><a   className="hover:text-black font-semibold">Sign In</a></li>
+                <li><Link    className="hover:text-black font-semibold">Home</Link></li>
+                <li><Link    className="hover:text-black font-semibold">About</Link></li>
+                <li><Link    className="hover:text-black font-semibold">Blog</Link></li>
+                <li><Link    className="hover:text-black font-semibold">FAQ</Link></li>
+                <li><Link    className="hover:text-black font-semibold">Buy Now</Link></li>
+                <li><Link    className="hover:text-black font-semibold">Sign In</Link></li>
 
               </ul>
             </div>
@@ -36,11 +36,11 @@ const NavBar = () => {
 
               <Link to={ `${ROUTES.HOME}` }
                   className="bg-[indigo]  hover:bg-[lightseagreen] rounded-lg p-2   ">Home</Link> &nbsp;
-              <Link   
-                  className="bg-[midnightblue] hover:bg-[indigo] rounded-lg p-2  ">About</Link>&nbsp;
-              <Link    
+              <Link to={`${ROUTES.ABOUT}`}   
+                  className="bg-[midnightblue] hover:bg-[indigo] rounded-lg p-2  ">Abouts</Link>&nbsp;
+              <Link  to={`${ROUTES.BLOG}`}   
                   className="bg-[midnightblue] hover:bg-[indigo] rounded-lg p-2  ">Blog</Link> &nbsp;
-              <Link    
+              <Link    to={`${ROUTES.FAQ}`} 
                   className="bg-[midnightblue] hover:bg-[indigo] rounded-lg p-2  ">FAQ</Link> &nbsp;
               <Link><button id="all_btn" 
                   className="bg-[midnightblue] hover:bg-[indigo] rounded-lg p-2  ">Buy Book </button> </Link>
