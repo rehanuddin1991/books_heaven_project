@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div  className='mt-6 ml-3'>
-      <footer className="footer bg-neutral text-neutral-content p-10">
+    <div  className='mt-6  '>
+      <footer className="footer bg-neutral text-neutral-content p-6 pl-16">
   <aside>
     <svg
       width="50"

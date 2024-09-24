@@ -30,7 +30,8 @@ const NavBar = () => {
               </ul>
             </div>
 
-            <a className="btn btn-ghost text-2xl  font-semibold text-[whitesmoke] hover:text-[white]">   Book's Heaven</a>
+            <Link to={ `${ROUTES.HOME}` } className="btn btn-ghost text-2xl  font-semibold text-[whitesmoke]
+             hover:text-[white]">   Book's Heaven</Link>
           </div>
           <div className="navbar-center hidden lg:flex  sm:flex md:flex  ">
             <ul className="menu menu-horizontal ">
