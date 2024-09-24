@@ -3,6 +3,8 @@ export const ROUTES = {
     ABOUT: "/about",
     BLOG: "/blog",
     FAQ: "/faq",
+    BUYBOOK: "/buybook",
+    SIGNIN: "/signin",
      
     SINGLE_BOOKS: {
       STATIC: "/book/:bookId",

@@ -13,7 +13,7 @@ const Book = ({props}) => {
                 alt="book"
                 className="rounded-xl " />
             </figure>
-            <div className="card-body text-xs lg:text-2xl md:text-2xl sm:text-xl    text-left">
+            <div className="card-body text-xs lg:text-2xl md:text-2xl sm:text-xl relative   text-left">
                 <h2 className="card-title text-xs    ">Tags: {tags.join()}</h2>
                 <h2 className="card-title text-[darkcyan] mt-1">Book Name:{bookName}</h2>
                 <h2 className="card-title text-[indigo] mt-1">Author:{author}</h2>
@@ -21,7 +21,7 @@ const Book = ({props}) => {
                  
                 <h2 className="card-title text-[midnightblue] mt-1">Rating:{rating}</h2> <br />
                 
-                <div className="card-actions  mx-auto ">
+                <div className="card-actions absolute bottom-10 right-10  mx-auto ">
               <Link to={{ pathname: `/book/${bookId}`  }} state={{book: props}}      ><button className="btn btn-primary  "  >Book Details</button></Link>  
                 </div>
             </div>

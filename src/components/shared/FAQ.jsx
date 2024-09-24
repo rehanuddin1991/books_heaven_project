@@ -4,8 +4,8 @@ const FAQ = () => {
   return (
     <div className='mt-4 '>
       <div className="collapse collapse-plus bg-base-200">
-        <input type="radio" name="my-accordion-3" checked="checked" />
-        <div className="collapse-title text-xl font-medium">What is React.js and Explain the concept of "components" in React?</div>
+        <input type="radio" name="my-accordion-3" checked="checked" readOnly />
+        <div className="collapse-title text-xl font-medium">What is React.js and Explain the concept of components in React?</div>
         <div className="collapse-content text-xl">
           <p className='text-[darkcyan]'>React is a JavaScript library for building single-page interfaces.React allows us to
             create reusable UI components. <br />

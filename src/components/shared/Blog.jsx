@@ -21,7 +21,7 @@ import React, { useEffect, useState } from 'react'
         blogs.map(
             (singleBlog, index) => {
                return (    
-                <div key={index}   className="card bg-[darkcyan] text-[whitesmoke] h-[300px]   shadow-xl">
+                <div key={index}   className="card bg-base-300 text-[darkcyan] h-[320px] rounded-md  shadow-xl">
                  
                 <div className="card-body items-center text-justify">
                     <h2 className="card-title text-[indigo]  text-2xl  ">Blog Title   :{singleBlog.title.slice(0, 20)}</h2>

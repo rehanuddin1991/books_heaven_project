@@ -23,30 +23,30 @@ const NavBar = () => {
                 <li><Link   to={`${ROUTES.ABOUT}`}   className="hover:text-black font-semibold">About</Link></li>
                 <li><Link   to={`${ROUTES.BLOG}`}   className="hover:text-black font-semibold">Blog</Link></li>
                 <li><Link  to={`${ROUTES.FAQ}`}  className="hover:text-black font-semibold">FAQ</Link></li>
-                <li><Link    className="hover:text-black font-semibold">Buy Now</Link></li>
-                <li><Link    className="hover:text-black font-semibold">Sign In</Link></li>
+                <li><Link to={`${ROUTES.BUYBOOK}`}   className="hover:text-black font-semibold">Buy Now</Link></li>
+                <li><Link  to={`${ROUTES.SIGNIN}`}  className="hover:text-black font-semibold">Sign In</Link></li>
 
               </ul>
             </div>
 
-            <a className="btn btn-ghost text-2xl font-semibold text-[whitesmoke] hover:text-[white]">   Book's Heaven</a>
+            <a className="btn btn-ghost text-2xl  font-semibold text-[whitesmoke] hover:text-[white]">   Book's Heaven</a>
           </div>
-          <div className="navbar-end hidden lg:flex  sm:flex md:flex ">
+          <div className="navbar-center hidden lg:flex  sm:flex md:flex  ">
             <ul className="menu menu-horizontal ">
 
               <Link to={ `${ROUTES.HOME}` }
-                  className="bg-[indigo]  hover:bg-[lightseagreen] rounded-lg p-2   ">Home</Link> &nbsp;
+                  className="bg-[indigo]  hover:bg-[lightseagreen] text-[1rem]  rounded-lg p-2 min-w-[2560px]:text-5xl   ">Home</Link> &nbsp;
               <Link to={`${ROUTES.ABOUT}`}   
-                  className="bg-[midnightblue] hover:bg-[indigo] rounded-lg p-2  ">Abouts</Link>&nbsp;
+                  className="bg-[midnightblue] hover:bg-[indigo] text-[1rem] rounded-lg p-2   ">Abouts</Link>&nbsp;
               <Link  to={`${ROUTES.BLOG}`}   
-                  className="bg-[midnightblue] hover:bg-[indigo] rounded-lg p-2  ">Blog</Link> &nbsp;
+                  className="bg-[midnightblue] hover:bg-[indigo] text-[1rem] rounded-lg p-2   ">Blog</Link> &nbsp;
               <Link    to={`${ROUTES.FAQ}`} 
-                  className="bg-[midnightblue] hover:bg-[indigo] rounded-lg p-2  ">FAQ</Link> &nbsp;
-              <Link><button id="all_btn" 
-                  className="bg-[midnightblue] hover:bg-[indigo] rounded-lg p-2  ">Buy Book </button> </Link>
+                  className="bg-[midnightblue] hover:bg-[indigo] text-[1rem] rounded-lg p-2  ">FAQ</Link> &nbsp;
+              <Link to={`${ROUTES.BUYBOOK}`} ><button id="all_btn" 
+                  className="  bg-[midnightblue] hover:bg-[indigo] text-[1rem] rounded-lg p-2  ">Buy Book </button> </Link>
              &nbsp;
-               <Link><button id="all_btn" 
-                  className="bg-[midnightblue] hover:bg-[indigo] rounded-lg p-2  ">Sign In </button> </Link>
+               <Link to={`${ROUTES.SIGNIN}`}><button id="all_btn" 
+                  className="bg-[midnightblue] hover:bg-[indigo] text-[1rem] rounded-lg p-2  ">Sign In </button> </Link>
 
             </ul>
           </div>

@@ -8,6 +8,8 @@ import NoPageFound from "../NoPageFound";
 import About from "../components/shared/About";
 import FAQ from "../components/shared/FAQ";
 import Blog from "../components/shared/Blog";
+import SignIn from "../components/shared/SignIn";
+import BuyBook from "../components/shared/BuyBook";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,18 @@ const router = createBrowserRouter([
       {
         path: `${ROUTES.ABOUT}`,
         element: <About />,
+      }
+
+      ,
+      {
+        path: `${ROUTES.SIGNIN}`,
+        element: <SignIn />,
+      }
+
+      ,
+      {
+        path: `${ROUTES.BUYBOOK}`,
+        element: <BuyBook />,
       }
       ,
       {
