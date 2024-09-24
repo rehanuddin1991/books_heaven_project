@@ -7,7 +7,7 @@ export default function CommonLayout() {
   return (
     <>
       <Navbar />
-      <Carousel />
+      
       
       <Outlet />
       <Footer />
