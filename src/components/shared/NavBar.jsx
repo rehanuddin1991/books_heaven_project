@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ROUTES } from "../../routes";
+ 
 const NavBar = () => {
   return (
     <div className='w-[100%] mx-auto text-white bg-[#3E4876] '>

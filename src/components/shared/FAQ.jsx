@@ -4,8 +4,10 @@ const FAQ = () => {
   return (
     <div className='mt-4 '>
       <div className="collapse collapse-plus bg-base-200">
-        <input type="radio" name="my-accordion-3" checked="checked" readOnly />
-        <div className="collapse-title text-xl font-medium">What is React.js and Explain the concept of components in React?</div>
+          <input type="radio" name="my-accordion-3" checked="checked" readOnly /> 
+       
+        <div className="collapse-title text-xl font-medium">
+          What is React.js and Explain the concept of components in React?</div>
         <div className="collapse-content text-xl">
           <p className='text-[darkcyan]'>React is a JavaScript library for building single-page interfaces.React allows us to
             create reusable UI components. <br />
@@ -74,7 +76,13 @@ To send props into a component, use the same syntax as HTML attributes:
         <div className="collapse-content">
           <p  className='text-[midnightblue]'>  The React useState Hook allows us to track state in a function component.
 
-State generally refers to data or properties that need to be tracking in an application.
+State generally refers to data or properties that need to be tracking in an application. 
+<br />
+example <br />
+const [data, setData]=useState([]) <br />
+function() setData(data+5) <br />
+print data  <br /> ===result will be 5 each time the function will call data will increment with 5.
+ 
 <br />
           </p>
         </div>
@@ -87,7 +95,8 @@ State generally refers to data or properties that need to be tracking in an appl
         <div className="collapse-content">
           <p  className='text-[midnightblue]'  > The useEffect Hook allows you to perform side effects in your components.
 
-Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+Some examples of side effects are: fetching data, directly updating the DOM, and timers. when we need to render if an array changed or we need to set timer or we need to fetch data from server we should use 
+useEffect. if we mentioned dependency array useEffect will render based on given array.
           </p>
         </div>
       </div>
