@@ -1,8 +1,11 @@
-# React + Vite
+Project name: Book's Heaven
+GitHub : https://github.com/rehanuddin1991/books_heaven_project.git
+Live Link:  https://books-heaven.netlify.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technologies
+1) HTML5
+2) Tailwind CSS
+3) Daisy UI
+4) React js
+6) React Router DOM
+5) Vite
