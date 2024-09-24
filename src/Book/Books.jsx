@@ -17,7 +17,8 @@ const Books = () => {
          .then( data=>setBook(data))
       } ,[]);
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 min-[2560px]:grid-cols-5   p-3 shadow-sm justify-center items-center gap-4 ">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3
+     min-[2560px]:grid-cols-5   p-3 shadow-sm justify-center items-center gap-4  ">
        
        {
         book.map(

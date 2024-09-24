@@ -6,10 +6,11 @@ import { useLocation } from 'react-router-dom'
 const BookDetailsPage = ( ) => {
     const location=useLocation() ;
      const [books, setBooks]=useState({});
+       
       
-     
 useEffect(( ) => {
- setBooks(location.state.book)
+  if(location.state.book)
+ setBooks(location.state.book); else setBooks({});
 },[] )
 const wishToReadFunction=(type ) => {
     if(type==1)
@@ -22,7 +23,7 @@ const wishToReadFunction=(type ) => {
         <div className="hero bg-base-200  ">
   <div className="hero-content flex-col lg:flex-row gap-4 justify-between items-center">
     <img
-      src={books.image}
+      src={books?.image} alt="img"
       className="max-w-sm rounded-lg shadow-2xl min-h-[400px]" />
     <div>
       <h1 className="text-2xl font-bold  pl-20 text-[indigo]">Book Name: {books?.bookName}</h1>
