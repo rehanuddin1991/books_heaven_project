@@ -10,7 +10,7 @@ import FAQ from "../components/shared/FAQ";
 import Blog from "../components/shared/Blog";
 import SignIn from "../components/shared/SignIn";
 import BuyBook from "../components/shared/BuyBook";
-import FAQ1 from "../components/shared/FAQ1";
+
 
 const router = createBrowserRouter([
   {
@@ -44,7 +44,7 @@ const router = createBrowserRouter([
       ,
       {
         path: `${ROUTES.FAQ}`,
-        element: <FAQ1 />,
+        element: <FAQ />,
       }
       
       ,
